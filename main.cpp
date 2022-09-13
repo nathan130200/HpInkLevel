@@ -118,11 +118,11 @@ public:
 
 static SInkLevelColorizer colorizers[NUM_STYLES] =
 {
-	{  0.f , 0.2f, IM_COL32(255,0 ,0,255)     },
-	{ 0.21f, 0.5f, IM_COL32(255, 60, 0, 255)  },
+	{   0.f, 0.2f, IM_COL32(255,   0, 0, 255) },
+	{ 0.21f, 0.5f, IM_COL32(255,  60, 0, 255) },
 	{ 0.51f, 0.6f, IM_COL32(255, 166, 0, 255) },
 	{ 0.61f, 0.8f, IM_COL32(191, 255, 0, 255) },
-	{ 0.81f, 1.f , IM_COL32(0, 255, 0, 255)   }
+	{ 0.81f, 1.f , IM_COL32(  0, 255, 0, 255) }
 };
 
 void ProgressBarStyled(float percent) {
@@ -160,7 +160,6 @@ int WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 	ImGui_ImplSDL2_InitForSDLRenderer(window, renderer);
 	ImGui_ImplSDLRenderer_Init(renderer);
 	auto& io = ImGui::GetIO();
-	io.Framerate = 60;
 
 	SDL_Event evt;
 
